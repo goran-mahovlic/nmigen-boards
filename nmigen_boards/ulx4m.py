@@ -85,8 +85,10 @@ class ULX4MPlatform(LatticeECP5Platform):
         ),
 
         Resource("serdes", 0,
-            Subsignal("tx", DiffPairs("W4", "W5", dir="o")),
-            Subsignal("rx", DiffPairs("Y5", "Y6", dir="i")),
+            #Subsignal("tx", DiffPairs("W4", "W5", dir="o")),
+            #Subsignal("rx", DiffPairs("Y5", "Y6", dir="i")),
+            Subsignal("tx", DiffPairs("W17", "W18", dir="o")),
+            Subsignal("rx", DiffPairs("Y16", "Y17", dir="i")),
         ),
         Resource("serdes", 1,
             Subsignal("tx", DiffPairs("W8", "W9", dir="o")),
@@ -97,8 +99,11 @@ class ULX4MPlatform(LatticeECP5Platform):
             Subsignal("rx", DiffPairs("Y14", "Y15", dir="i")),
         ),
         Resource("serdes", 3,
-            Subsignal("tx", DiffPairs("W17", "W18", dir="o")),
-            Subsignal("rx", DiffPairs("Y16", "Y17", dir="i")),
+            #Subsignal("tx", DiffPairs("W17", "W18", dir="o")),
+            #Subsignal("rx", DiffPairs("Y16", "Y17", dir="i")),
+            Subsignal("tx", DiffPairs("W4", "W5", dir="o")),
+            Subsignal("rx", DiffPairs("Y5", "Y6", dir="i")),
+
         ),
 
         Resource("serdes_clk", 0, DiffPairs("Y11", "Y12", dir="i")),
